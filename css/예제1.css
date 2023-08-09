@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+section {
+    max-width: 1920px;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    background: url("../images/photo1.jpg") no-repeat left top / 100% 100%;
+}
+
+section .rolling {
+    display: flex;
+    justify-content: flex-end;
+    white-space: nowrap;
+}
+section .rolling div {
+    font-size: 5rem;
+    font-weight: 900;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: mediumaquamarine;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1.5px;
+
+    animation: infiniteMoveText 10s linear infinite;
+}
+section .rolling div span {
+    color: transparent;
+    -webkit-text-stroke: 2px mediumaquamarine;
+}
+section .rolling:nth-child(1) div {animation-duration: 20s;}
+section .rolling:nth-child(2) div {animation-duration: 15s;}
+section .rolling:nth-child(3) div {animation-duration: 12s;}
+
+/*section .rolling:nth-child(1){*/
+/*    !*background: red;*!*/
+/*    transform: rotate(30deg) translateY(200px) translateX(200px);*/
+/*}*/
+/*section .rolling:nth-child(2){*/
+/*    transform: rotate(-25deg) translateY(120px);*/
+/*}*/
+/*section .rolling:nth-child(3){*/
+/*    transform: rotate(25deg) translateY(300px);*/
+/*}*/
+/*section .rolling:nth-child(4){*/
+/*    transform: rotate(-2deg) translateY(-200px);*/
+/*}*/
+/*section .rolling:nth-child(5){*/
+/*    transform: rotate(5deg) translateY(450px);*/
+/*}*/
+
+
+@keyframes infiniteMoveText {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+

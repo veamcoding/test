@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap');
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+section {
+    position: absolute;
+    left: 75px;
+    right: 75px;
+    top: 75px;
+    bottom: 75px;
+}
+section:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #4141ea, transparent);
+    mix-blend-mode: color;
+    pointer-events: none;
+}
+section .videoArea {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+section .videoArea video {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+section .clippingText {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 100%;
+    background: #fff;
+    font-size: 8rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    padding: 8% 8%;
+    mix-blend-mode: screen;
+}
+section .clippingText span {
+    font-size: 1.2em;
+}
+
+
