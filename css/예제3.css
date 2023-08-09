@@ -4,6 +4,8 @@ body {
 }
 
 section {
+    font-size: 100px;
+    background: green;
     position: absolute;
     left: 75px;
     right: 75px;
